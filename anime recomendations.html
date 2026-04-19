@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anime Recommendations</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+img{
+    width:200px;
+    height:300px;
+}
+</style>
+
+</head>
+
+<body>
+<div class="top-bar">
+    <a href="login.html" class="login-btn">login</a>
+    <a href="checklist.html" class="checklist-btn">Checklist</a>
+</div>
+
+<!-- ONLY ONE VIDEO -->
+<video autoplay muted loop id="bgVideo">
+  <source src="vid.mp4" type="video/mp4">
+</video>
+
+<input type="text" id="searchBar" placeholder="🔍 Search anime...">
+
+<h1 style="font-size: 50px; text-align:center; color:white; margin-top: 80px;">
+ANIME RECOMMENDATIONS
+</h1>
+
+<p style="font-size:20px; text-align:center; line-height: 30px; margin-bottom: 50px; color:white;">
+Feeling lost, numb, or just bored? <br>
+There’s always a story that understands you. <br>
+Dive into the ultimate weeb anime collection for every mood  <br>
+whether you want to escape, bored, or feel something.
+</p><div class="container">
+
+<div class="card" data-trailer="v1.mp4">
+<img src="de.jpg">
+<h2>Demon Slayer</h2>
+<p>⭐ 8.7/10</p>
+<p>Action</p>
+</div>
+
+<div class="card" data-trailer="v4.mp4">
+<img src="aot.jpeg">
+<h2>Attack on Titan</h2>
+<p>⭐ 9.0/10</p>
+<p>Dark</p>
+</div>
+
+<div class="card" data-trailer="v5.mp4">
+<img src="naruto.jpg">
+<h2>Naruto</h2>
+<p>⭐ 9.1/10</p>
+<p>Ninja</p>
+</div>
+
+<div class="card" data-trailer="v3.mp4">
+<img src="bleach.jpg">
+<h2>Bleach</h2>
+<p>⭐ 9.4/10</p>
+<p>Action</p>
+</div>
+
+<div class="card" data-trailer="v9.mp4">
+<img src="op.jpg">
+<h2>One Piece</h2>
+<p>⭐ 9.6/10</p>
+<p>Action</p>
+</div>
+<div class="card" data-trailer="v10.mp4"><img src="dn.jpg"><h2>Death Note</h2><p>⭐ 9.0/10</p><p>Thriller</p></div>
+
+<div class="card" data-trailer="v15.mp4"><img src="H.jpg"><h2>Haikyuu!!</h2><p>⭐ 8.7/10</p><p>Sports</p></div>
+
+<div class="card" data-trailer="v13.mp4"><img src="sl.jpg"><h2>Solo Leveling</h2><p>⭐ 9.4/10</p><p>Action</p></div>
+
+<div class="card" data-trailer="v11.mp4"><img src="ddd.jpg"><h2>Dan Da Dan</h2><p>⭐ 8.5/10</p><p>Action</p></div>
+
+<div class="card" data-trailer="v12.mp4"><img src="m.jpg"><h2>Mashle</h2><p>⭐ 8.2/10</p><p>Comedy</p></div>
+
+<div class="card" data-trailer="v14.mp4"><img src="mtp.jpg"><h2>Moriarty the Patriot</h2><p>⭐ 8.4/10</p><p>Mystery</p></div>
+
+<div class="card"data-trailer="ur.mp4"><img src="your.jpg"><h2>Your Name</h2><p>⭐ 8.8/10</p><p>Romance</p></div>
+
+<div class="card"data-trailer="su.mp4">
+    <img src="suzume.jpg">
+    <h2>Suzume</h2>
+    <p>⭐ 7.9/10</p>
+    <p>Fantasy</p>
+</div>
+
+<div class="card"data-trailer="cli.mp4">
+    <img src="weatheringwithyou.jpg">
+    <h2>Weathering With You</h2>
+    <p>⭐ 7.5/10</p>
+    <p>Romance</p>
+</div>
+
+<div class="card"data-trailer="ua.mp4">
+    <img src="mha.jpg">
+    <h2>My Hero Academia</h2>
+    <p>⭐ 8.4/10</p>
+    <p>Action</p>
+</div>
+
+<div class="card"data-trailer="baji.mp4">
+    <img src="bab.jpg">
+    <h2>Tokyo Revengers</h2>
+    <p>⭐ 8.1/10</p>
+    <p>Action</p>
+</div>
+<div class="card"data-trailer="one.mp4"><img src="onepunchman.jpg"><h2>One Punch Man</h2><p>⭐ 8.7/10</p><p>Action</p></div>
+
+<div class="card"data-trailer="slime.mp4"><img src="tensura.jpg"><h2>That Time I Got Reincarnated as a Slime</h2><p>⭐ 8.5/10</p><p>Fantasy</p></div>
+
+<div class="card"data-trailer="the.mp4"><img src="saiki.jpg"><h2>The Disastrous Life of Saiki K</h2><p>⭐ 8.4/10</p><p>Comedy</p></div>
+
+<div class="card"data-trailer="fruit.mp4"><img src="fb.jpg"><h2>Fruits Basket</h2><p>⭐ 8.6/10</p><p>Romance</p></div>
+
+<div class="card"data-trailer="sit.mp4"><img src="scool.jpg"><h2>School Babysitters</h2><p>⭐ 8.0/10</p><p>Slice of Life</p></div>
+
+<div class="card"data-trailer="spy.mp4"><img src="Spy x Family Anya Yor.jpg"><h2>Spy x Family</h2><p>⭐ 8.6/10</p><p>Comedy</p></div>
+
+<div class="card"data-trailer="gho.mp4"><img src="tg.jpg"><h2>Tokyo Ghoul</h2><p>⭐ 7.8/10</p><p>Dark</p></div>
+
+<div class="card"data-trailer="jojo.mp4"><img src="jojo.jpg"><h2>JoJo's Bizarre Adventure</h2><p>⭐ 8.6/10</p><p>Action</p></div>
+
+<div class="card"data-trailer="zom100.mp4"><img src="zom.jpg"><h2>Zom 100</h2><p>⭐ 7.9/10</p><p>Comedy</p></div>
+
+<div class="card"data-trailer="v14.mp4"><img src="The Detective Is Already Dead.jpg"><h2>The Detective is Already Dead</h2><p>⭐ 6.8/10</p><p>Mystery</p></div>
+
+<div class="card" data-trailer="v14.mp4"><img src="spi.jpg"><h2>So I'm a Spider, So What?</h2><p>⭐ 7.3/10</p><p>Fantasy</p></div>
+
+<div class="card" data-trailer="v14.mp4"><img src="pri.jpg"><h2>I Was Reincarnated as the 7th Prince</h2><p>⭐ 7.5/10</p><p>Fantasy</p></div>
+
+<div class="card"data-trailer="v14.mp4"><img src="mob.jpg"><h2>Mob Psycho 100</h2><p>⭐ 8.6/10</p><p>Action</p></div>
+
+<div class="card"><img src="kun.jpg"><h2>Welcome to Demon School Iruma-kun</h2><p>⭐ 8.0/10</p><p>Comedy</p></div>
+
+<div class="card"data-trailer="hero.mp4"><img src="heroh.jpg"><h2>I'm Quitting Heroing</h2><p>⭐ 7.4/10</p><p>Fantasy</p></div>
+
+<div class="card"><img src="lo.jpg"><h2>Horimiya</h2><p>⭐ 8.2/10</p><p>Romance</p></div>
+
+<div class="card"><img src="x.jpg"><h2>My Next Life as a Villainess</h2><p>⭐ 7.5/10</p><p>Comedy</p></div>
+
+<div class="card"><img src="z.jpg"><h2>7th Time Loop</h2><p>⭐ 7.6/10</p><p>Romance</p></div>
+
+<div class="card"><img src="The World's Finest Assassin.jpg"><h2>World's Finest Assassin</h2><p>⭐ 7.6/10</p><p>Action</p></div>
+
+<div class="card"><img src="y.jpg"><h2>I Got a Cheat Skill</h2><p>⭐ 7.2/10</p><p>Fantasy</p></div>
+
+<div class="card"><img src="mt.jpg"><h2>Mushoku Tensei</h2><p>⭐ 8.7/10</p><p>Fantasy</p></div>
+
+<div class="card"><img src="bbb.jpg"><h2>Kuroko's Basketball</h2><p>⭐ 8.3/10</p><p>Sports</p></div>
+
+<div class="card"><img src="gintama.jpg"><h2>Gintama</h2><p>⭐ 9.0/10</p><p>Comedy</p></div>
+
+<div class="card"><img src="oo.jpg"><h2>Konosuba</h2><p>⭐ 8.4/10</p><p>Comedy</p></div>
+
+<div class="card"><img src="zz.jpg"><h2>Seraph of the End</h2><p>⭐ 7.5/10</p><p>Action</p></div>
+
+<div class="card"><img src="cc.jpg"><h2>Bungo Stray Dogs</h2><p>⭐ 8.3/10</p><p>Mystery</p></div>
+
+<div class="card"><img src="tsu.jpg"><h2>Tsukimichi Moonlit Fantasy</h2><p>⭐ 7.8/10</p><p>Fantasy</p></div>
+
+<div class="card"><img src="7ds.jpg"><h2>Seven Deadly Sins</h2><p>⭐ 7.8/10</p><p>Action</p></div>
+
+<div class="card"><img src="fah.jpg"><h2>Classroom of the Elite</h2><p>⭐ 8.2/10</p><p>Psychological</p></div>
+
+<div class="card"><img src="star.jpg"><h2>Oshi no Ko</h2><p>⭐ 8.6/10</p><p>Drama</p></div>
+
+<div class="card"><img src="part.jpg"><h2>The Devil is a Part-Timer</h2><p>⭐ 8.0/10</p><p>Comedy</p></div>
+
+<div class="card"><img src="saw.jpg"><h2>Chainsaw Man</h2><p>⭐ 8.5/10</p><p>Action</p></div>
+
+<div class="card"><img src="lll.jpg"><h2>Re:Zero</h2><p>⭐ 8.3/10</p><p>Fantasy</p></div>
+
+<div class="card"><img src="mon.jpg"><h2>Monster</h2><p>⭐ 9.0/10</p><p>Thriller</p></div>
+
+<div class="card"><img src="clo.jpg"><h2>Black Clover</h2><p>⭐ 8.2/10</p><p>Action</p></div>
+
+<div class="card"><img src="but.jpg"><h2>Black Butler</h2><p>⭐ 7.7/10</p><p>Dark</p></div>
+
+<div class="card"><img src="1.jpg"><h2>Charlotte</h2><p>⭐ 7.8/10</p><p>Drama</p></div>
+
+<div class="card"><img src="2.jpg"><h2>Ouran High School Host Club</h2><p>⭐ 8.1/10</p><p>Comedy</p></div>
+
+<div class="card"><img src="3.jpg"><h2>Daily Life of Immortal King</h2><p>⭐ 7.5/10</p><p>Comedy</p></div>
+
+<div class="card"><img src="4.jpg"><h2>Wind Breaker</h2><p>⭐ 8.0/10</p><p>Action</p></div>
+
+<div class="card"><img src="5.jpg"><h2>Wrong Way to Use Healing Magic</h2><p>⭐ 7.5/10</p><p>Fantasy</p></div>
+
+<div class="card"><img src="6.jpg"><h2>Mieruko-chan</h2><p>⭐ 7.2/10</p><p>Horror</p></div>
+
+<div class="card"><img src="7.jpg"><h2>My Happy Marriage</h2><p>⭐ 7.8/10</p><p>Romance</p></div>
+
+
+<div class="card"><img src="9.jpg"><h2>Parasyte: The Maxim</h2><p>⭐ 8.4/10</p><p>Horror</p></div>
+
+
+</div>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anime Cards</title>
+
+<style>
+body {
+    font-family: Arial;
+    background: black;
+    text-align: center;
+}
+
+/* CONTAINER */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* YOUR ORIGINAL CARD STYLE (UNCHANGED LOOK) */
+.card {
+    background: rgba(255,255,255,0.1); /* same translucent look */
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    width: 200px;
+    position: relative;
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* DELETE BUTTON (small, won’t ruin design) */
+.delete {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: red;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 4px 7px;
+}
+
+/* INPUT AREA */
+.add-box {
+    margin: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin: 5px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: #4da6ff;
+    color: white;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h2 style="color:white;">For new updates signup</h2>
+<div class="container" id="cardContainer"></div>
+
+<script>
+let cards = JSON.parse(localStorage.getItem("animeCards")) || [];
+
+// DISPLAY CARDS
+function renderCards() {
+    let container = document.getElementById("cardContainer");
+    container.innerHTML = "";
+
+    cards.forEach((card, index) => {
+        let div = document.createElement("div");
+        div.className = "card";
+
+        div.innerHTML = `
+            <button class="delete" onclick="deleteCard(${index})">X</button>
+            <img src="${card.img}">
+            <h3>${card.name}</h3>
+        `;
+
+        container.appendChild(div);
+    });
+}
+
+// ADD CARD
+function addCard() {
+    let name = document.getElementById("animeName").value;
+    let img = document.getElementById("animeImg").value;
+
+    if (name === "" || img === "") return;
+
+    cards.push({ name: name, img: img });
+    localStorage.setItem("animeCards", JSON.stringify(cards));
+
+    renderCards();
+
+    document.getElementById("animeName").value = "";
+    document.getElementById("animeImg").value = "";
+}
+
+// DELETE CARD
+function deleteCard(index) {
+    cards.splice(index, 1);
+    localStorage.setItem("animeCards", JSON.stringify(cards));
+    renderCards();
+}
+
+// LOAD ON START
+renderCards();
+</script>
+
+</body>
+</html>
+</div>
+<style>
+.btn {
+    font-size: 18px;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 10px;
+    display: inline-block;
+
+    /* TRANSLUCENT GLASS EFFECT */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255,255,255,0.6);
+    transform: scale(1.05);
+}
+</style>
+
+<div style="text-align:center; margin-top: 30px;">
+
+  <a href="https://www.crunchyroll.com//" class="btn">
+     ▶ Watch Now
+  </a>
+
+  <a href="https://www.netflix.com/title/81091393" class="btn">
+     🌐 Stream on Netflix
+  </a>
+
+  <a href="https://myanimelist.net/anime/38000/Kimetsu_no_Yaiba" class="btn">
+     ⭐ More Info
+  </a>
+
+  <a href="https://animewatchtv.su/" class="btn">
+     =)
+  </a>
+
+</div><script src="script.js"></script>
+<div id="trailerModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeTrailer()">&times;</span>
+        <iframe id="trailerFrame" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+</body>
+</html>

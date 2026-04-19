@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Anime Recommendations</title>
+
+<style>
+
+/* VIDEO BACKGROUND */
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* BODY */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0, 100, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    color: #66ccff;
+    transform: scale(1.1);
+}
+
+/* NAV LINKS */
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: #66ccff;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #66ccff;
+}
+
+/* CENTER */
+.center {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TITLE */
+.center h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.enter-btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    background: rgba(0, 150, 255, 0.7);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enter-btn:hover {
+    transform: scale(1.1);
+    background: rgba(0, 150, 255, 1);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- VIDEO -->
+<video autoplay muted loop id="bgVideo">
+  <source src="vid.mp4" type="video/mp4">
+</video>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">25156</div>
+
+    <div class="nav-links">
+        <a href="anime recomendations.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign In</a>
+        <a href="#">Watch</a>
+    </div>
+</div>
+
+<!-- CENTER -->
+<div class="center">
+    <h1>Anime Recommendations</h1>
+    <button class="enter-btn" onclick="goToPage()">Enter ➜</button>
+</div>
+
+<script>
+function goToPage() {
+    window.location.href = "anime recomendations.html";
+}
+</script>
+
+</body>
+</html>

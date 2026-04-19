@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Anime Checklist</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* ADD INPUT SECTION */
+.add-box {
+    text-align: center;
+    margin: 20px;
+}
+
+#animeInput {
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.add-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #4da6ff;
+    color: white;
+    cursor: pointer;
+}
+
+/* NEW ITEMS STYLE */
+.new-item {
+    display: block;
+    margin: 5px 0;
+}
+
+.deleteBtn {
+    margin-left: 10px;
+    background: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- VIDEO BACKGROUND -->
+<video autoplay muted loop id="myVideo">
+  <source src="vid.mp4" type="video/mp4">
+</video>
+
+<h1 style="text-align:center; color:white;">✔ My Anime Checklist</h1>
+
+<!-- ✅ ADD NEW ANIME -->
+<div class="add-box">
+    <input type="text" id="animeInput" placeholder="Add new anime...">
+    <button class="add-btn" onclick="addAnime()">Add</button>
+</div>
+
+<div class="checklist-container" id="checklist">
+
+<label><input type="checkbox"> One Punch Man</label>
+<label><input type="checkbox"> Assassination Classroom</label>
+<label><input type="checkbox"> My Hero Academia</label>
+<label><input type="checkbox"> Dr. Stone</label>
+<label><input type="checkbox"> Demon Slayer</label>
+<label><input type="checkbox"> That Time I Got Reincarnated as a Slime</label>
+<label><input type="checkbox"> Jujutsu Kaisen</label>
+<label><input type="checkbox"> Haikyuu!!</label>
+<label><input type="checkbox"> Death Note</label>
+<label><input type="checkbox"> Naruto</label>
+
+<label><input type="checkbox"> Misfit of the Demon King Academy</label>
+<label><input type="checkbox"> Tokyo Revengers</label>
+<label><input type="checkbox"> Attack on Titan</label>
+<label><input type="checkbox"> Spy x Family</label>
+<label><input type="checkbox"> Kaguya-sama: Love is War</label>
+<label><input type="checkbox"> Tokyo Ghoul</label>
+<label><input type="checkbox"> JoJo's Bizarre Adventure</label>
+<label><input type="checkbox"> Cells at Work</label>
+<label><input type="checkbox"> The Disastrous Life of Saiki K</label>
+<label><input type="checkbox"> School Babysitters</label>
+
+<label><input type="checkbox"> Bleach</label>
+<label><input type="checkbox"> Blue Lock</label>
+<label><input type="checkbox"> Your Name</label>
+<label><input type="checkbox"> I Want to Eat Your Pancreas</label>
+<label><input type="checkbox"> Suzume</label>
+<label><input type="checkbox"> Zom 100: Bucket List of the Dead</label>
+<label><input type="checkbox"> Solo Leveling</label>
+<label><input type="checkbox"> The Detective is Already Dead</label>
+<label><input type="checkbox"> So I'm a Spider, So What?</label>
+<label><input type="checkbox"> I Was Reincarnated as the 7th Prince</label>
+
+<label><input type="checkbox"> Mob Psycho 100</label>
+<label><input type="checkbox"> Dan Da Dan</label>
+<label><input type="checkbox"> Welcome to Demon School Iruma-kun</label>
+<label><input type="checkbox"> I'm Quitting Heroing</label>
+<label><input type="checkbox"> Horimiya</label>
+<label><input type="checkbox"> Fruits Basket</label>
+<label><input type="checkbox"> My Next Life as a Villainess</label>
+<label><input type="checkbox"> 7th Time Loop</label>
+<label><input type="checkbox"> World's Finest Assassin</label>
+<label><input type="checkbox"> I Got a Cheat Skill</label>
+
+<label><input type="checkbox"> Mushoku Tensei</label>
+<label><input type="checkbox"> Kuroko's Basketball</label>
+<label><input type="checkbox"> Detective Millionaire</label>
+<label><input type="checkbox"> Gintama</label>
+<label><input type="checkbox"> Konosuba</label>
+<label><input type="checkbox"> Seraph of the End</label>
+<label><input type="checkbox"> Overcautious Hero</label>
+<label><input type="checkbox"> Mashle: Magic and Muscles</label>
+<label><input type="checkbox"> Bungo Stray Dogs</label>
+<label><input type="checkbox"> Tsukimichi Moonlit Fantasy</label>
+
+<label><input type="checkbox"> Seven Deadly Sins</label>
+<label><input type="checkbox"> Classroom of the Elite</label>
+<label><input type="checkbox"> Oshi no Ko</label>
+<label><input type="checkbox"> The Devil is a Part-Timer</label>
+<label><input type="checkbox"> Moriarty the Patriot</label>
+<label><input type="checkbox"> Chainsaw Man</label>
+<label><input type="checkbox"> Re:Zero</label>
+<label><input type="checkbox"> Monster</label>
+<label><input type="checkbox"> Black Clover</label>
+<label><input type="checkbox"> Black Butler</label>
+
+<label><input type="checkbox"> Charlotte</label>
+<label><input type="checkbox"> Ouran High School Host Club</label>
+<label><input type="checkbox"> Daily Life of the Immortal King</label>
+<label><input type="checkbox"> Wind Breaker</label>
+<label><input type="checkbox"> Wrong Way to Use Healing Magic</label>
+<label><input type="checkbox"> Mieruko-chan</label>
+<label><input type="checkbox"> My Happy Marriage</label>
+<label><input type="checkbox"> Ron Kamonohashi</label>
+<label><input type="checkbox"> Instant Death Ability</label>
+<label><input type="checkbox"> No Longer Allowed in Another World</label>
+
+<label><input type="checkbox"> Demon King is a Typical Nobody</label>
+<label><input type="checkbox"> Strongest Soldier in Demon Army</label>
+<label><input type="checkbox"> Noragami</label>
+<label><input type="checkbox"> The New Gate</label>
+<label><input type="checkbox"> A Silent Voice</label>
+<label><input type="checkbox"> Yakuza Fiancé</label>
+<label><input type="checkbox"> Parallel World Pharmacy</label>
+<label><input type="checkbox"> God of High School</label>
+<label><input type="checkbox"> One Piece</label>
+<label><input type="checkbox"> Code Geass</label>
+
+<label><input type="checkbox"> Record of Ragnarok</label>
+<label><input type="checkbox"> Sword Art Online</label>
+<label><input type="checkbox"> Eminence in Shadow</label>
+<label><input type="checkbox"> Tomodachi Game</label>
+<label><input type="checkbox"> Apothecary Diaries</label>
+<label><input type="checkbox"> Lord of Mysteries</label>
+<label><input type="checkbox"> Takopi's Original Sin</label>
+
+</div>
+
+<div style="text-align:center; margin-top:20px;">
+    <a href="anime recomendations.html" class="back-btn">⬅ Back</a>
+</div>
+
+<script>
+function addAnime() {
+    let input = document.getElementById("animeInput");
+    let value = input.value;
+
+    if (value === "") return;
+
+    let label = document.createElement("label");
+    label.className = "new-item";
+
+    label.innerHTML = `
+        <input type="checkbox"> ${value}
+        <button class="deleteBtn" onclick="this.parentElement.remove()">X</button>
+    `;
+
+    document.getElementById("checklist").appendChild(label);
+
+    input.value = "";
+}
+</script>
+
+</body>
+</html>
